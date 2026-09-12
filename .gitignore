@@ -1,46 +1,5 @@
-```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-.ENV
-.ENV.*
-.python-version
-
-# Excel files (if they are temporary/generated)
-*.xlsx~
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-*~
-```
-
-Wait, let me reconsider. The Excel file might be test data rather than a temporary file. And most of the added files are source code files (.py, .md, .txt) which shouldn't be ignored. Let me check again:
-
-The only potentially ignorable item is if there were any build artifacts, but all listed files are source/config files. However, I'll keep some basic Python ignores since there's Python code in the project:
-
-```
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-.venv/
-venv/
-.env
-.env.local
-*.log
-```node_modules/
+(debt_doc_automator.py is a source file, and the other changes are source/config files like README.md, create_test_data.py, template.txt, and test_debts.xlsx - no build artifacts, dependencies, or temp files to ignore)node_modules/
 .next/
 dist/
 build/
-node_modules/
+*.log
