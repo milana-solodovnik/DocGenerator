@@ -1,5 +1,31 @@
-(debt_doc_automator.py is a source file, and the other changes are source/config files like README.md, create_test_data.py, template.txt, and test_debts.xlsx - no build artifacts, dependencies, or temp files to ignore)node_modules/
-.next/
-dist/
+# Файлы сборки PyInstaller (не нужны в репозитории, их каждый собирает сам)
 build/
-*.log
+dist/
+*.spec
+
+# Временные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Виртуальные окружения
+venv/
+env/
+ENV/
+
+# Файлы IDE (настройки редакторов)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Тестовые данные и результаты (чтобы не светить лишнее)
+test_debts.xlsx
+template.txt
+*.docx
